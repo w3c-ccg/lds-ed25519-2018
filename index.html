@@ -203,19 +203,21 @@ A simple example of an Ed25519 2018 Verification Key:
     "type": "Ed25519VerificationKey",
     "owner": "did:example:123456789abcdefghi",
     "expires": "2017-02-08T16:02:20Z",
-    "publicKeyBase64" : "H3C2AVvLMv6gmMNam3uVAjZpfkcJCwDwnZn6z3wXmqPV"
+    "publicKeyHex" : "ee4a9ce4d9e88c7247675d4473970608b3082a02550c12a1ac06eef58adf5458"
   }
 }
       </pre>
+
+      <p>Note: The <code>publicKeyHex</code> property contains the hex-encoded raw public key bytes.</p>
     </section>
     </section>
 
 
     <section>
-      <h2>The Ed25519 Signature 2018 Signature Suite</h2>
+      <h2>The Ed25519 2018 Signature Suite</h2>
 
       <p>
-The Ed25519 Signature 2018 <a>signature suite</a> MUST be used in
+The Ed25519 2018 <a>signature suite</a> MUST be used in
 conjunction with the signing and verification algorithms in the
 Linked Data Signatures [[LD-SIGNATURES]] specification. The suite consists of
 the following algorithms:
