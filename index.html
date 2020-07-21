@@ -278,18 +278,17 @@ A simple example of a Ed25519 2018 Signature:
 
       <pre class="example highlight">
 {
-  "@context": ["http://schema.org/", "https://w3id.org/security/v1"],
+  "@context": ["http://schema.org/", "https://w3id.org/security/v2"],
   "description": "Hello world!",
-  "signature": {
+  "proof": {
     "type": "Ed25519Signature2018",
     "created": "2016-10-23T05:50:16Z",
-    "creator": "did:example:123456789abcdefghi",
-    "domain": "example.com",
-    "signatureValue" : "if8ooA+32YZc4SQBvIDDY9tgTatPoq4IZ8Kr+We1t38LR2RuURmaVu9D4shbi4VvND87PUqq5/0vsNFEGIIEDA=="
+    "verificationMethod": "did:example:123456789abcdefghi#key1",
+    "proofPurpose": "assertionMethod",
+    "jws" : "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..AUQ3AJ23WM5vMOWNtYKuqZBekRAOUibOMH9XuvOd39my1sO-X9R4QyAXLD2ospssLvIuwmQVhJa-F0xMOnkvBg"
   }
 }
       </pre>
     </section>
   </body>
 </html>
-
