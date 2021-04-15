@@ -87,9 +87,9 @@
           }]
         }],
         localBiblio:  {
-          "RDF-DATASET-NORMALIZATION": {
-            title:    "RDF Dataset Normalization 1.0",
-            href:     "http://json-ld.github.io/normalization/spec/",
+          "RDF-DATASET-CANONICALIZATION": {
+            title:    "RDF Dataset Canonicalization",
+            href:     "http://json-ld.github.io/rdf-dataset-canonicalization/spec/",
             authors:  ["David Longley", "Manu Sporny"],
             status:   "CG-DRAFT",
             publisher:  "JSON-LD Community Group"
@@ -137,7 +137,7 @@ is not fit for production deployment.
       <p>
 This specification describes a standard signature suite created in 2018 for the
 Linked Data Signatures [[LD-SIGNATURES]] specification. It uses the RDF
-Dataset Normalization Algorithm [[RDF-DATASET-NORMALIZATION]] to transform the
+Dataset Normalization Algorithm [[RDF-DATASET-CANONICALIZATION]] to transform the
 input document into its canonical form. It uses SHA-512 [[RFC6234]] as the
 <a>message digest algorithm</a> and Ed25519 [[ED25519]] as the
 <a>signature algorithm</a>.
@@ -232,7 +232,7 @@ the following algorithms:
           <tr>
             <td>canonicalizationAlgorithm</td>
             <td>https://w3id.org/security#URDNA2015</td>
-            <td>[[RDF-DATASET-NORMALIZATION]]</td>
+            <td>[[RDF-DATASET-CANONICALIZATION]]</td>
           </tr>
           <tr>
             <td>digestAlgorithm</td>
